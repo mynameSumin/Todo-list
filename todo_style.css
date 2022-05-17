@@ -1,0 +1,19 @@
+<style>
+*{
+  box-sizing: border-box;
+  margin: 0;
+
+}
+  body {
+  min-height: 100vh;
+  background: var(--black);
+}
+  h1 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#list_number{
+  text-align: center;
+}
+</style>
