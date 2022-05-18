@@ -3,7 +3,14 @@ let todo_box = document.getElementById('todo_box');
 let todo_space = document.getElementById('todo_space');
 let lenght = document.getElementById('number');
 
-count();
+//할일 세기
+function count(){
+  let itemCount = document.querySelectorAll('input[type="checkbox"]').length
+  let checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length
+  let uncheckedCount = itemCount - checkedCount
+  lenght.innerHTML = uncheckedCount;
+}
+
 function add_todo(){
   if(todo_box.value!=""){ //입력 있을 때만 추가
     let list = document.createElement('input');
@@ -42,17 +49,8 @@ function add_todo(){
     })
   }
   //아무 입력 없을 땐 추가 안됨
-    else{
-    }
 }
-
-function count(){
-  let itemCount = document.querySelectorAll('input[type="checkbox"]').length
-  let checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length
-  let uncheckedCount = itemCount - checkedCount
-  lenght.innerHTML = uncheckedCount;
-}
-
+count();
 
 todo_button.addEventListener('click',add_todo)
 todo_box.addEventListener('keydown',function(e){
@@ -61,14 +59,6 @@ todo_box.addEventListener('keydown',function(e){
     count();
   }
 })
-
-//할일 세기
-function count(){
-  let itemCount = document.querySelectorAll('input[type="checkbox"]').length
-  let checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length
-  let uncheckedCount = itemCount - checkedCount
-  lenght.innerHTML = uncheckedCount;
-}
 
 //추가버튼 클릭 및 엔터 시 할 일 추가
 todo_button.addEventListener('click',add_todo)
