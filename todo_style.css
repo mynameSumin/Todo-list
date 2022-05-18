@@ -4,10 +4,6 @@
   margin: 0;
 
 }
-  body {
-  min-height: 100vh;
-  background: var(--black);
-}
   h1 {
     padding-top: 30px;
     padding-bottom: 20px;
@@ -15,5 +11,10 @@
 }
 #list_number{
   text-align: center;
+}
+.container{
+  padding-top: 15px;
+  margin:auto;
+  }
 }
 </style>
