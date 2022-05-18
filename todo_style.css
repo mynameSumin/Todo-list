@@ -1,20 +1,25 @@
-<style>
-*{
-  box-sizing: border-box;
-  margin: 0;
-
+body{
+  background-image: url('backgroud.jpg');
+  background-size: cover;
 }
-  h1 {
+.todo_banner {
     padding-top: 30px;
     padding-bottom: 20px;
     text-align: center;
-}
-#list_number{
-  text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
 }
 .container{
   padding-top: 15px;
   margin:auto;
   }
+#list_number{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }
-</style>
+#number{
+  color: red;
+}
